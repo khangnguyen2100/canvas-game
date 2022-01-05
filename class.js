@@ -1,4 +1,4 @@
-import {context, starHandle, changeValue, spawn, spawnStarId,isStartItem1,starSettings } from '../index.js'
+import {context, starHandle, changeValue, spawn, spawnStarId,isStartItem1,starSettings } from './index.js'
 class Player {
     constructor(x,y,radius,color) {
         this.x = x,

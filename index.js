@@ -1,4 +1,4 @@
-import {Star, Player, Projectile, Enemy, Particle} from './component/class.js'
+import {Star, Player, Projectile, Enemy, Particle} from './class.js'
 
 const canvas = document.querySelector("#canvas")
 const pointEl = document.querySelector(".point")
@@ -74,7 +74,7 @@ const spawn = {
     },
     spawnStar : function() {
         if(!spawnStarId) {
-            spawnStarId = setInterval(this.spawnStarHandle, 1000);
+            spawnStarId = setInterval(this.spawnStarHandle, 10000);
         }
     },
     spawnStarHandle : function() {
