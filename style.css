@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow: hidden;
+    font-family: "Poppins", serif;
+    user-select: none;
+
+}
+body {
+    position: relative;
+    background-color: #000;
+}
+.point {
+    color : #000;
+    position: absolute;
+    top : 3rem;
+    left : 3rem;
+    font-size: 2rem;
+    color: #fff;
+    user-select: none;
+}
+.popup {
+    display: none;
+}
+.see {
+    position: fixed;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 25rem;
+    background-color : #fff;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score {
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+.btn {
+    background-color: #34495e;
+    padding: 1rem 4.5rem;
+    border-radius: 1rem;
+    border: 0;
+    color : #fff;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    transition: all .2s ease;
+
+}
+.btn:active {
+    transform: scale(1.03) translateY(-1px);
+}
+.level-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.level-heading {
+    font-size: 1.8rem;
+    font-weight: 500;    
+}
+.level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.level-item {
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    border : 1px solid #333;
+    transition: all .2s ease;
+}
+.level-item:active {
+    transform: translateY(-2px);
+}
+.level-item.active {
+    border : 1px solid orangered;
+    color : orangered
+}
+.level-item:not(:last-child) {
+    margin-right: 1rem;
+}
